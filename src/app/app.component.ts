@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jsonenv';
+
+  constructor(private appService: AppService){
+    appService.get().subscribe((data) => {
+      console.log(data.json);
+    });
+  }
+
 }

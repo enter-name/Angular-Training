@@ -1,0 +1,46 @@
+[{
+	"id": 1,
+	"name": "Hello"
+}, {
+	"id": 2,
+	"name": "World"
+}, {
+	"id": 3,
+	"name": "Save"
+}, {
+	"id": 4,
+	"name": "My"
+}, {
+	"id": 5,
+	"name": "Json"
+}, {
+	"id": 6,
+	"name": "free"
+}, {
+	"id": 7,
+	"name": "hola"
+}, {
+	"id": 8,
+	"name": "ola"
+}, {
+	"id": 9,
+	"name": "hallo"
+}, {
+	"id": 10,
+	"name": "namaste"
+}]
+
+
+["Hello", "World", "Save", "My", "Json", "free"]
+
+
+
+fetch('https://thread-frost-buffet.glitch.me/find?id=626a883ec5ea2000a34fd4cb')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+
+  fetch('https://thread-frost-buffet.glitch.me/find?id=626a8a0ec5ea2000a34fd4cc')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
